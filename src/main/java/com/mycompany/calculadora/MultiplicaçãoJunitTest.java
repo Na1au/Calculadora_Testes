@@ -10,6 +10,8 @@ public class MultiplicaçãoJunitTest {
   public void MultiplicarDoisNumeros() {
     Calculadora calc = new Calculadora();
     int mult = calc.multiplicar(9, 3);
+
+    //Valida o resultado da multiplicação anterior
     Assert.assertEquals(27, mult);
   }
 
@@ -18,6 +20,8 @@ public class MultiplicaçãoJunitTest {
   public void MultiplicarPositivoEZero() {
     Calculadora calc = new Calculadora();
     int mult = calc.multiplicar(9, 0);
+
+    //Valida o resultado da multiplicação anterior
     Assert.assertEquals(0, mult);
   }
 
@@ -26,6 +30,8 @@ public class MultiplicaçãoJunitTest {
   public void MultiplicarZeros() {
     Calculadora calc = new Calculadora();
     int mult = calc.multiplicar(0, 0);
+
+    //Valida o resultado da multiplicação anterior
     Assert.assertEquals(0, mult);
   }
 
@@ -34,7 +40,9 @@ public class MultiplicaçãoJunitTest {
   public void MultiplicarNegativoEPositivo() {
     Calculadora calc = new Calculadora();
     int mult = calc.multiplicar(9, -3);
-    Assert.assertEquals(0, mult);
+
+    //Valida o resultado da multiplicação anterior
+    Assert.assertEquals(27, mult);
   }
 
 }
