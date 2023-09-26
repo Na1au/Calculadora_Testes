@@ -11,6 +11,7 @@ public class CalculadoraJunitTest {
     Calculadora calc = new Calculadora();
     int soma = calc.somar(3, 7);
 
+    //Valida o resultado da soma anterior
     Assert.assertEquals(10, soma);
   }
 
@@ -20,6 +21,7 @@ public class CalculadoraJunitTest {
     Calculadora calc = new Calculadora();
     int soma = calc.somar(3, 0);
 
+    //Valida o resultado da soma anterior
     Assert.assertEquals(3, soma);
   }
 
@@ -29,6 +31,7 @@ public class CalculadoraJunitTest {
     Calculadora calc = new Calculadora();
     int soma = calc.somar(0, 0);
 
+    //Valida o resultado da soma anterior
     Assert.assertEquals(0, soma);
   }
 
@@ -38,6 +41,7 @@ public class CalculadoraJunitTest {
     Calculadora calc = new Calculadora();
     int soma = calc.somar(3, -1);
 
+    //Valida o resultado da soma anterior
     Assert.assertEquals(2, soma);
   }
 }
