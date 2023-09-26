@@ -11,6 +11,7 @@ public class DivisãoJunitTest {
     Calculadora calc = new Calculadora();
     int div = calc.dividir(8, 4);
 
+    //Valida o resultado da divisão anterior
     Assert.assertEquals(2, div);
   }
 
@@ -18,9 +19,10 @@ public class DivisãoJunitTest {
   @Test
   public void DividirPositivoEZero() {
     Calculadora calc = new Calculadora();
-    int div = calc.dividir(4, 0);
+    int div = calc.dividir(0, 4);
 
-    Assert.assertEquals(4, div);
+    //Valida o resultado da divisão anterior
+    Assert.assertEquals(0, div);
   }
 
   // Cenário 3: dois valores iguais
@@ -29,6 +31,7 @@ public class DivisãoJunitTest {
     Calculadora calc = new Calculadora();
     int div = calc.dividir(8, 8);
 
+    //Valida o resultado da divisão anterior
     Assert.assertEquals(1, div);
   }
 
@@ -38,6 +41,7 @@ public class DivisãoJunitTest {
     Calculadora calc = new Calculadora();
     int div = calc.dividir(8, -4);
 
+    //Valida o resultado da divisão anterior
     Assert.assertEquals(-2, div);
   }
 
@@ -47,6 +51,7 @@ public class DivisãoJunitTest {
     Calculadora calc = new Calculadora();
     int div = calc.dividir(4, 8);
 
-    Assert.assertEquals(2, div);
+    //Valida o resultado da divisão anterior
+    Assert.assertEquals(0.5, div);
   }
 }
