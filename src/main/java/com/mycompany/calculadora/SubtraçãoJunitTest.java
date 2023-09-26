@@ -21,7 +21,7 @@ public class SubtraçãoJunitTest {
     Calculadora calc = new Calculadora();
     int sub = calc.subtrair(5, 0);
 
-    //Valida o resultado da multiplicação anterior
+    //Valida o resultado da subtração anterior
     Assert.assertEquals(5, sub);
   }
 
@@ -31,7 +31,7 @@ public class SubtraçãoJunitTest {
     Calculadora calc = new Calculadora();
     int sub = calc.subtrair(0, 0);
 
-    //Valida o resultado da multiplicação anterior
+    //Valida o resultado da subtração anterior
     Assert.assertEquals(0, sub);
   }
 
@@ -41,7 +41,7 @@ public class SubtraçãoJunitTest {
     Calculadora calc = new Calculadora();
     int sub = calc.subtrair(5, -2);
 
-    //Valida o resultado da multiplicação anterior
+    //Valida o resultado da subtração anterior
     Assert.assertEquals(7, sub);
   }
 
@@ -51,7 +51,7 @@ public class SubtraçãoJunitTest {
     Calculadora calc = new Calculadora();
     int sub = calc.subtrair(5, 5);
 
-    //Valida o resultado da multiplicação anterior
+    //Valida o resultado da subtração anterior
     Assert.assertEquals(0, sub);
   }
 
