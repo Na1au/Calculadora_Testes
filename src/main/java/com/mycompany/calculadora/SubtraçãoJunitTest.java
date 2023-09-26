@@ -10,6 +10,8 @@ public class SubtraçãoJunitTest {
   public void SubtrairDoisValores() {
     Calculadora calc = new Calculadora();
     int sub = calc.subtrair(5, 2);
+
+    //Valida o resultado da subtração anterior
     Assert.assertEquals(3, sub);
   }
 
@@ -18,6 +20,8 @@ public class SubtraçãoJunitTest {
   public void SubtrairPositivoEZero() {
     Calculadora calc = new Calculadora();
     int sub = calc.subtrair(5, 0);
+
+    //Valida o resultado da multiplicação anterior
     Assert.assertEquals(5, sub);
   }
 
@@ -26,6 +30,8 @@ public class SubtraçãoJunitTest {
   public void SubtrairZeros() {
     Calculadora calc = new Calculadora();
     int sub = calc.subtrair(0, 0);
+
+    //Valida o resultado da multiplicação anterior
     Assert.assertEquals(0, sub);
   }
 
@@ -34,7 +40,9 @@ public class SubtraçãoJunitTest {
   public void SubtrairPositivoENegativo() {
     Calculadora calc = new Calculadora();
     int sub = calc.subtrair(5, -2);
-    Assert.assertEquals(8, sub);
+
+    //Valida o resultado da multiplicação anterior
+    Assert.assertEquals(7, sub);
   }
 
   // Cenário 5: dois valores iguais
@@ -42,6 +50,8 @@ public class SubtraçãoJunitTest {
   public void SubtrairPositivosIguais() {
     Calculadora calc = new Calculadora();
     int sub = calc.subtrair(5, 5);
+
+    //Valida o resultado da multiplicação anterior
     Assert.assertEquals(0, sub);
   }
 
