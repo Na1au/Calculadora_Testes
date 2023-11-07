@@ -52,6 +52,6 @@ public class DivisãoJunitTest {
     int div = calc.dividir(4, 8);
 
     //Valida o resultado da divisão anterior
-    Assert.assertEquals(0.5, div);
+    Assert.assertEquals(0, div);
   }
 }

@@ -42,7 +42,7 @@ public class MultiplicaçãoJunitTest {
     int mult = calc.multiplicar(9, -3);
 
     //Valida o resultado da multiplicação anterior
-    Assert.assertEquals(27, mult);
+    Assert.assertEquals(-27, mult);
   }
 
 }
